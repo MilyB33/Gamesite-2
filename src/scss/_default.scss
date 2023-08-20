@@ -1,0 +1,11 @@
+@use './variables';
+
+@each $key, $value in variables.$colors {
+    .color-#{$key} {
+        color: var(--#{$key});
+    }
+}
+
+* {
+    color: var(--clr-light-100);
+}

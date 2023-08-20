@@ -1,0 +1,48 @@
+$colors: (
+    'clr-light-100': rgb(255, 255, 255),
+    'clr-light-200': #e5e5e5,
+    'clr-light-300': rgba(255, 255, 255, 0.5),
+    'clr-dark-100': rgb(0, 0, 0),
+    'clr-dark-200': rgba(0, 0, 0, 0.6),
+    'clr-dark-300': rgb(38, 38, 38),
+    'clr-dark-400': #262626,
+    'clr-dark-500': #6c757d,
+
+    'clr-purple-100': rgb(199, 60, 221),
+    'clr-purple-200': rgba(199, 60, 221, 0.62),
+    'clr-additional-100': #faaeae,
+    'clr-additional-200': #db4343,
+    'clr-additional-300': #753e3e,
+
+    'clr-glitch-100': #0ff,
+    'clr-glitch-200': #f0f,
+
+    'clr-error-100': #f25c54,
+
+    'clr-skeleton-100': #2a2d43,
+    'clr-skeleton-200': #414361,
+    'clr-skeleton-300': #8e9aaf,
+);
+
+$font-weights: (
+    'light': 400,
+    'bold': 600,
+);
+
+$breakpoints: (
+    'xs': 400px,
+    'sm': 600px,
+    'md': 960px,
+    'lg': 1280px,
+    'xl': 1440px,
+);
+
+:root {
+    @each $key, $value in $colors {
+        --#{ $key }: #{$value};
+    }
+
+    @each $key, $value in $font-weights {
+        --#{ $key }: #{$value};
+    }
+}
